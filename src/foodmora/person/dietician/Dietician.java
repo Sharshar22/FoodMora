@@ -23,12 +23,15 @@ public class Dietician extends Person implements IDietician {
     public void deleteRecipe(String name) {
         RecipePool.getInstance().deleteRecipeByName(RecipePool.getInstance(),name);
     }
+    public void choiceOfDieticianMenu (){
 
-
-    public  void printDieticianMenu (){
-        System.out.println("Please choose one of the following operations \n" +
-                "[1] Create recipe\n" +
-                "[2] Edit recipe\n" +
-                "[3] view recipe");
+        System.out.println("User type selected: dietician \n" +
+                "Please choose one of the following operations:\n" +
+                "[1] List my weeks\n" +
+                "[2] List recipes \n" +
+                "[3] View recipe\n" +
+                " Generate a new week");
     }
+
+
 }
